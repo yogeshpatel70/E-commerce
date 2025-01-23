@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   })
 })
 app.use(cors({
-  origin: ["https://e-commerce-rfhd.vercel.app"]
+  origin: ["https://e-commerce-rfhd.vercel.app", "https://e-commerce-silk-alpha.vercel.app/api/products?page=1&limit=8"]
 }));
 app.use(bodyParser.json());
 app.use('/api', productRoutes);
