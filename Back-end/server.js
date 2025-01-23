@@ -9,21 +9,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
-// CORS configuration: Only allow requests from your frontend URL
-const corsOptions = {
-  origin: 'https://e-commerce-rfhd.vercel.app', // Replace with your frontend URL
-  methods: ['GET', 'POST', 'OPTIONS'],  // Allow the necessary HTTP methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
-};
-
-// Use CORS with the above options
 app.use(cors());
 
-// Body parser to handle JSON requests
 app.use(bodyParser.json());
 
-// API routes
+
 app.use('/api', productRoutes);
 
 // Root endpoint to check server status
