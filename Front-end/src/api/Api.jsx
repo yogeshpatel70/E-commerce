@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create(
   {
-    baseURL: "https://e-commerce-silk-alpha.vercel.app/api"
+    baseURL: "https://e-commerce-git-main-yogeshs-projects-0b3218f5.vercel.app/api"
   }
 );
 
