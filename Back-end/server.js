@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   })
 })
 app.use(cors({
-  origin: "https://e-commerce-rfhd.vercel.app/"
+  origin: ["https://e-commerce-rfhd.vercel.app"]
 }));
 app.use(bodyParser.json());
 app.use('/api', productRoutes);
