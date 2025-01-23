@@ -18,7 +18,7 @@ const corsOptions = {
 };
 
 // Use CORS with the above options
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Body parser to handle JSON requests
 app.use(bodyParser.json());
