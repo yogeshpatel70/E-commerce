@@ -9,7 +9,13 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.get('/', (req, res) => {
+  res.send({
+    activeStatus: true,
+    error: false
 
+  })
+})
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', productRoutes);
