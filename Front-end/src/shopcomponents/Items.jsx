@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ItemGrid from "./ItemGrid";
 import Pagination from "./Pagination";
-import { getData } from "../api/api";
+import { getData } from "../api/Api";
+
 
 
 const Items = ({ filters, view, sort }) => {
