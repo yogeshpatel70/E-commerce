@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import OurProductList from './OurProductList';
 import { useNavigate } from 'react-router-dom';
-import { getData, getOurData } from '../../api/api';
+
 import { useStepContext } from '@mui/material';
+import { getOurData } from '../../api/Api';
 
 
 const OurProducts = ({ Data }) => {

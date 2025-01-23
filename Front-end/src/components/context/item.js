@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getDataById } from "../../api/api";
+import { getDataById } from "../../api/Api";
+
 
 
 export const fetchProductById = (id) => async (dispatch) => {
